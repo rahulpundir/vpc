@@ -1,5 +1,5 @@
 variable "name" {
-  default     = "opstree-vpc"
+  default     = "sandy-vpc"
   description = "Name tag for the VPC to be created"
 }
 
@@ -14,5 +14,5 @@ variable "enable_dns_support" {
 }
 
 variable "route53_zone_name" {
-  default = "internal.opstree.com"
+  default = "internal.sandy.com"
 }
