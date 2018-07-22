@@ -4,6 +4,5 @@ Terraform module to manage VPC, this module is built on golden principle of "Con
 * [] Route for internet gateway
 * [] Internal route53 zone so that instances can interact with each other using domain names instead of IP.
 * [] Public subnets in availability zone A & B
-* [] Private subnets in availability zone A & B
-* [] Private route table for availabilit zone A & B
+* [] Private route tables for availability zone A & B
  

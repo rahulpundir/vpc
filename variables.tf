@@ -26,14 +26,6 @@ variable "pub_sn_azb_cidr" {
   description = "CIDR for Public subnet in AZB"
 }
 
-variable "pvt_sn_aza_cidr" {
-  description = "CIDR for Private subnet in AZA"
-}
-
-variable "pvt_sn_azb_cidr" {
-  description = "CIDR for Private subnet in AZB"
-}
-
 variable "region" {
   description = "Region in which services will be managed"
 }
@@ -44,12 +36,4 @@ variable "pub_sn_aza_name" {
 
 variable "pub_sn_azb_name" {
   description = "Name of Public Subnet in AZB"
-}
-
-variable "pvt_sn_aza_name" {
-  description = "Name of Private Subnet in AZA"
-}
-
-variable "pvt_sn_azb_name" {
-  description = "Name of Private Subnet in AZB"
 }

@@ -49,22 +49,6 @@ module "pub_sn_b" {
   map_public_ip_on_launch = "false"
 }
 
-module "pvt_sn_a" {
-  source = "github.com/opstree-terraform/subnet"
-  vpc_id = "${aws_vpc.vpc.id}"
-  cidr   = "${var.pvt_sn_aza_cidr}"
-  az     = "${var.region}a"
-  name   = "${var.pvt_sn_aza_name}"
-}
-
-module "pvt_sn_b" {
-  source = "github.com/opstree-terraform/subnet"
-  vpc_id = "${aws_vpc.vpc.id}"
-  cidr   = "${var.pvt_sn_azb_cidr}"
-  az     = "${var.region}b"
-  name   = "${var.pvt_sn_azb_name}"
-}
-
 module "pvt_route_table_aza" {
   source    = "github.com/opstree-terraform/pvt_route_table"
   vpc_id    = "${aws_vpc.vpc.id}"
