@@ -6,8 +6,7 @@ Terraform module to manage VPC, this module is built on golden principle of "Con
 - [x] Internal route53 zone so that instances can interact with each other using domain names instead of IP.
 - [x] Public subnets in availability zone A & B
 - [x] Private route tables for availability zone A & B
-- [] Bastion host
-
+- [] Bastion host with openswan
 
 
  
