@@ -62,3 +62,19 @@ module "pvt_route_table_azb" {
   pub_sn_id = "${module.pub_sn_b.id}"
   vpc_name  = "${var.name}"
 }
+
+module "web-security-group" {
+  source     = "github.com/opstree-terraform/dynamic-sg"
+  vpc_id     = "${aws_vpc.vpc.id}"
+  name       = "web-sg"
+  ingress_with_cidr_blocks = [
+    {
+      rule = "https-rule"
+      cidr_blocks = "0.0.0.0/0"
+    },
+    {
+      rule       = "http-rule"
+      cidr_block = "0.0.0.0/0"
+    },
+  ]
+} 
