@@ -21,3 +21,6 @@ output "pvt_route_table_aza_id" {
 output "pvt_route_table_azb_id" {
   value = "${module.pvt_route_table_azb.route_table_id}"
 }
+
+output "security_group" {
+  value = "${module.web-security-group.id}"
