@@ -26,3 +26,10 @@ output "security_group_id" {
   value = "${module.web-security-group.id}"
 }
 
+output "pub_sn_a_id" {
+  value = "${module.pub_sn_a.id}"
+}
+
+output "pub_sn_b_id" {
+  value = "${module.pub_sn_b.id}"
+}
